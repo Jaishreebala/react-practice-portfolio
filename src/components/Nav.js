@@ -23,7 +23,16 @@ const NavStyle = styled.div`
     align-items: center;
     padding: 1rem 10rem;
     background: #282828;
-
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    @media (max-width: 1300px)
+    {
+        flex-direction: column;
+        li{
+            padding-left: 1px;
+        }
+    }
     a{
         text-decoration: none;
         color: #fff;
@@ -38,7 +47,7 @@ const NavStyle = styled.div`
         font-weight: lighter;
     }
     li{
-        padding-left: 10rem;
+        padding-left: 5rem;
         position: relative;
     }
 `
